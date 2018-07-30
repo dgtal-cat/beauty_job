@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Article from './components/Article';
+import ArticleList from './components/ArticleList';
 import articles from './fakeProps'
+import 'bootstrap/dist/css/bootstrap.css'
 
-ReactDOM.render(<Article article={articles[0]}/>, document.getElementById('root'));
+ReactDOM.render(<ArticleList articles={articles}/>, document.getElementById('root'));
