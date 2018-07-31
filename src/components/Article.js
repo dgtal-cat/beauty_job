@@ -9,12 +9,12 @@ class Article extends Component {
     render() {
         const {article} = this.props;
         console.log('---', this.props);
-        const articleBody = this.state.isOpen && <section>{article.text}</section>;
+        const articleBody = this.state.isOpen && <section className="text-primary">{article.text}</section>;
         return (
             <div className="container">
                 <div className="jumbotron">
-                    <h1 className="display-3">{article.title}
-                    <button className="btn-dark" onClick={this.clickHandler}>
+                    <h1 className="h1 text-lg-center">{article.title}
+                    <button className="btn-outline-primary" onClick={this.clickHandler}>
                         {this.state.isOpen ? 'close' : 'open'}
                     </button>
                     </h1>

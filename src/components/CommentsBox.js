@@ -2,7 +2,7 @@ import React from "react";
 
 function CommentsBox () {
     return (
-        <div className="comments_box">
+        <div className="text-info form-text">
             <p>Some comments</p>
         </div>
     )
